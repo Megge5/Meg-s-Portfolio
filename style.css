@@ -1,0 +1,165 @@
+/* Make it responsive */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header, section, footer {
+    padding: 1rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .art-img {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf8f3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ffc1cc;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.art-img {
+  width: 200px;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+body.dark {
+  background: #222;
+  color: #f9f9f9;
+}
+
+body.dark header {
+  background: #444;
+}
+
+body.dark nav a {
+  color: #f9f9f9;
+}
+
+#blog-section {
+  padding: 2rem;
+}
+
+.blog-post {
+  background: #fff0f5;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.blog-post:hover {
+  background: #ffe0ec;
+}
+
+.full-content {
+  display: none;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.read-more {
+  color: #d6336c;
+  font-weight: bold;
+}
+#new-post {
+  padding: 2rem;
+  background: #f9f9f9;
+  margin-top: 2rem;
+  border-top: 2px dashed #ccc;
+}
+
+#postForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#postForm input, #postForm textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#postForm button {
+  padding: 0.7rem;
+  background-color: #ff66a3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#postForm button:hover {
+  background-color: #d6336c;
+}
+
+#skills {
+  padding: 2rem;
+  background: #fff5f8;
+  border-top: 2px solid #ffc1cc;
+}
+
+#skills h3 {
+  margin-top: 1rem;
+  color: #d6336c;
+}
+
+#skills ul {
+  list-style: square;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
